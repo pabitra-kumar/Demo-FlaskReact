@@ -14,7 +14,7 @@ def post_data():
         num = data.get('num')
         num = int(num)
         print(type(num))
-        # num = num * 2
+        num = num * 2
         return jsonify({'num': num}), 201
     else:
         return jsonify({'num': -1}), 400
